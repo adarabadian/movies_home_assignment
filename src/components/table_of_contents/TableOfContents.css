@@ -1,0 +1,105 @@
+#table-of-contents{
+    text-align: center;
+    border-right: 1px #94949470 solid;
+}
+
+#table-of-contents > h2{
+    text-align: center;
+}
+
+.active{
+    background: #ffffffd3;
+    color: #000;
+    border-radius: 50px;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.inactive{
+    background: transparent;
+    border-radius: 0px;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.inactive:hover {
+    cursor: pointer;
+}
+
+#films-menu > div > h4{
+    padding: 5px 0;
+}
+
+/* css for collapser mobile */
+.collapse-css-transition {
+    transition: height 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+@media screen and (max-width: 1200px) {
+    .inactive, .active{
+        width: 100%;
+    }
+} 
+
+
+@media screen and (min-width: 1000px) { 
+    #table-of-contents > div{
+        height: auto !important;
+        visibility:visible !important;
+    }
+    
+    #table-of-contents > h2 > p{
+        display: none;
+    }
+} 
+
+@media screen and (max-width: 1000px) { 
+    #table-of-contents > h2{
+        margin: 20px auto 0 auto;
+        padding: 3px 0;
+    }
+    
+    #table-of-contents > h2 > p{
+        display: inline;
+    }
+
+    #table-of-contents{
+        background: white;
+        width: 50% !important;
+        color: black;
+        border-radius: 50px;
+        margin: auto;
+    }
+
+    .active{
+        background: #000000d3;
+        color: rgb(255, 255, 255);
+        border-radius: 50px;
+        width: 85%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .inactive{
+        background: transparent;
+        border-radius: 0px;
+        width: 85%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+
+} 
+
+@media screen and (max-width: 550px) { 
+    #table-of-contents{
+        background: white;
+        width: 80% !important;
+        color: black;
+        border-radius: 50px;
+        margin: auto;
+    }
+
+} 

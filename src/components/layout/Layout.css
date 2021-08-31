@@ -1,0 +1,68 @@
+#layout{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#header {
+    /* had to decrease 1px due to border-bottom which is 1px */
+    height: calc(7% - 1px);
+    width: 100%;
+}
+
+#main-content{
+    height: 93%;
+    width: 100%;
+
+    display: flex;
+}
+
+
+@media screen and (min-width: 1000px) {
+    #main-content > #table-of-contents {
+        width: 20%;
+    }
+
+    #main-content > #chosen-film-details {
+        width: 80%;
+    }
+  } 
+
+
+
+  @media screen and (max-width: 1000px) {
+    #main-content {
+        display: block;
+        overflow-y: auto;
+        height: max-content;
+    }
+    
+  } 
+
+
+  @media screen and (max-width: 370px){
+    #header {
+        height: calc(11% - 1px);
+    }
+}
+
+
+@media screen and (max-height: 700px){
+    #header {
+        height: calc(11% - 1px);
+    }
+}
+
+
+@media screen and (max-height: 700px) and (max-width: 360px){
+    #header > h1{
+        text-align: center;
+        margin: auto;
+        padding-top: 17px;
+        font-family: 'STIX Two Math', serif;
+        width: 100%;
+        font-size: 150%;
+    }
+}
+
+

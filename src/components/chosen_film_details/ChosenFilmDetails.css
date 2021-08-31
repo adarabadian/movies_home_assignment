@@ -1,0 +1,48 @@
+#chosen-film-details{
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#chosen-film-details > div > button{
+    display: block;
+    margin: 20px auto 0 auto;
+    background: white;
+    border-radius: 10px;
+    width: 75px;
+    height: 70px;
+}
+
+#chosen-film-details > div > button > img{
+    height: 40px;
+}
+
+#chosen-film-details > div{
+    max-height: calc(100% - 20px);
+}
+
+#chosen-film-details > div > p{
+    margin: 30px 150px;
+}
+
+@media screen and (max-width: 1200px) {
+    #chosen-film-details > div > p{
+        margin: 20px 100px;
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    #chosen-film-details > div > p{
+        margin: 20px 60px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #chosen-film-details > div > p{
+        margin: 20px 15px;
+    }
+    
+    
+}

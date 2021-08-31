@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+
+#header{
+    border-bottom: 1px #94949470 solid;
+}
+
+#header > h1{
+    text-align: center;
+    margin: auto;
+    padding-top: 16px;
+    font-family: 'STIX Two Math', serif;
+}
+
+
+@media screen and (max-width: 370px){
+    #header > h1{
+        text-align: center;
+        margin: auto;
+        padding-top: 7px;
+        font-family: 'STIX Two Math', serif;
+    }
+}
